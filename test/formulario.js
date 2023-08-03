@@ -22,5 +22,8 @@ test.describe('Test form', () => {
     test('debería mostrar mensaje correcto', async ({ page }) => {
         await page.getByLabel('Contraseña').fill('123456');
     });
+    test('debería mostrar mensaje correcto', async ({ page }) => {
+        await page.getByLabel('Contraseña').fill('123456');
+    });
 
 })
