@@ -19,5 +19,8 @@ test.describe('Test form', () => {
     test('debería mostrar mensaje correcto', async ({ page }) => {
         await page.getByLabel('Email').fill('jose@gmail.com');
     });
+    test('debería mostrar mensaje correcto', async ({ page }) => {
+        await page.getByLabel('Contraseña').fill('123456');
+    });
 
 })
