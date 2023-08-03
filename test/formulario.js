@@ -12,4 +12,8 @@ test.describe('Test form', () => {
         await page.getByLabel('Nombre').fill('Ana');
     });
 
+    test('debería mostrar mensaje correcto', async ({ page }) => {
+        await page.getByLabel('Apellidos').fill('Garcia');
+    });
+
 })
