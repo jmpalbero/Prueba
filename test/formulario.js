@@ -16,4 +16,8 @@ test.describe('Test form', () => {
         await page.getByLabel('Apellidos').fill('Garcia');
     });
 
+    test('debería mostrar mensaje correcto', async ({ page }) => {
+        await page.getByLabel('Email').fill('jose@gmail.com');
+    });
+
 })
